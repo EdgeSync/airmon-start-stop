@@ -1,0 +1,8 @@
+#Copy this to /usr/local/bin
+#add sudo to start of commands if you are a non-privelaged user (not needed if root)
+#ensure you set chmod +x for your user account on the file 
+
+
+airmon-ng stop wlan1mon
+service network-manager restart
+ifconfig wlan0 up
